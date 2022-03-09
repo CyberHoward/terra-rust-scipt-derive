@@ -38,7 +38,7 @@ macro_rules! derive_error {
     };
 }
 
-#[proc_macro_derive(contract)]
+#[proc_macro_derive(CosmWasmContract)]
 pub fn derive_contract(item: TokenStream) -> TokenStream {
     // See https://doc.servo.org/syn/derive/struct.DeriveInput.html
     let input: DeriveInput = parse_macro_input!(item as DeriveInput);
